@@ -81,9 +81,10 @@ def update_V(V, Q, r, cost):
 	
 #read file and transfer to python list datatype
 #    filename = 'C:\\Users\\wu\\Documents\\MEGA\\graduate\\碩一(下)\\作業研究應用\\ORA_project\\final project\\GA\\20x5_flowshop.xlsx'#tkFileDialog.askopenfilename(initialdir = "/",title = "Select file")
-filename = 'C:\\Users\\wu\\Documents\\MEGA\\graduate\\碩一(下)\\作業研究應用\\ORA_project\\final project\\GA\\flow_shop.xlsx'#tkFileDialog.askopenfilename(initialdir = "/",title = "Select file")
+filename = '20x5_flowshop.xlsx'#tkFileDialog.askopenfilename(initialdir = "/",title = "Select file")
 pt_tmp=pd.read_excel(filename,sheet_name="S1",index_col =[0])
-pt = pt_tmp.as_matrix().tolist()
+pt = pt_tmp.values.tolist()
+
 
 m_sequence = list(range(0,len(pt[0]))) # m_sequence represent machine order in each job
 j_sequence = list(range(0,len(pt))) #j_sequence repersent job order
