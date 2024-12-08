@@ -1,5 +1,7 @@
 # Flow-Shop-Scheduling-Based-On-Reinforcement-Learning-Algorithm (Cont.)
 
+#代码中为 遗传算法  以及强化学习  的代码
+
 ## § Data source
 Project使用的兩個 9x5、20x5 flow shop資料，皆取自 [OR_Library](http://mistic.heig-vd.ch/taillard/problemes.dir/ordonnancement.dir/ordonnancement.html) 內所提供的 flow shop 例子
 
